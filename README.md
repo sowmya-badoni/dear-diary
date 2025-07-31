@@ -28,15 +28,15 @@ Log your thoughts, track your moods, and save memories — all in a cozy pastel 
 
 ---
 
+## 🌐 Try It Live
+
+📲 **Use Cute Diary here**:  
+🔗 [https://dear-diary-kappa.vercel.app](https://dear-diary-kappa.vercel.app)
+
+
 ## 🛠 How to Run Locally
 
 ```bash
 git clone https://github.com/sowmya-badoni/dear-diary.git
 cd cute-diary
 # Just open index.html in your browser (no build step needed!)
-
-## 🌐 Try It Live
-
-📲 **Use Cute Diary here**:  
-🔗 [https://dear-diary.vercel.app](https://dear-diary.vercel.app)
-
