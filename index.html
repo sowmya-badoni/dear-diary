@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Diary 🌸</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+
+  <!-- Firebase Compatibility SDKs (REQUIRED) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+
+  <!-- Your Firebase Config -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAOLlMOajm_UpIyGyiZHrITFs5W2ApFqfU",
+      authDomain: "dear-diary-1b17a.firebaseapp.com",
+      projectId: "dear-diary-1b17a",
+      storageBucket: "dear-diary-1b17a.appspot.com", // ✅ FIXED!
+      messagingSenderId: "832197526071",
+      appId: "1:832197526071:web:ea17d12c5021c66578f5b2",
+      measurementId: "G-LR7MSCRFYS"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+</head>
+<body>
+
+  <div id="authSection">
+    <h2>🔐 Welcome to Dear Diary</h2>
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <div class="auth-buttons">
+      <button onclick="register()">Sign Up ✨</button>
+      <button onclick="login()">Login 💖</button>
+    </div>
+  </div>
+
+  <div id="diarySection" style="display: none;">
+    <button onclick="logout()" class="logout-btn">Logout 🚪</button>
+
+    <div class="container">
+      <h1>🌼 Dear Diary 🌼</h1>
+      <div class="theme-toggle">
+  <label class="switch">
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+  </label>
+  <span id="themeLabel">🌞</span>
+</div>
+
+
+      <textarea id="diaryEntry" placeholder="Dear Diary, today was..."></textarea>
+      <label>Today's Mood: 🥰</label>
+      <div id="moodSelector">
+        <button onclick="selectMood('😊')">😊</button>
+        <button onclick="selectMood('😢')">😢</button>
+        <button onclick="selectMood('😠')">😠</button>
+        <button onclick="selectMood('😌')">😌</button>
+        <button onclick="selectMood('🥳')">🥳</button>
+      </div>
+
+      <div class="actions">
+        <button onclick="saveEntry()">Save Entry 💾</button>
+      </div>
+
+      <div id="entriesContainer"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

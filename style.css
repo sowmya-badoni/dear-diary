@@ -1,0 +1,241 @@
+body {
+  background: linear-gradient(to right, #ffe6f0, #e6f7ff);
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff0f5;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #ff69b4;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: 2px solid #ffcce0;
+  border-radius: 12px;
+  font-size: 16px;
+  resize: none;
+  background-color: #fff8fb;
+}
+
+button {
+  background-color: #ffb6c1;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff69b4;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.entry {
+  background-color: #fff;
+  border-left: 5px solid #ffb6c1;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #e60039;
+}
+#moodSelector button {
+  font-size: 22px;
+  margin: 5px;
+  background-color: #ffe0f0;
+  border: 2px solid #ffc0cb;
+  border-radius: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#moodSelector button:hover {
+  background-color: #ffb6c1;
+}
+
+#moodSelector button.selected {
+  background-color: #ff69b4;
+  color: white;
+}
+#authSection {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#authSection input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.auth-buttons button {
+  margin: 5px;
+  background-color: #ff85a2;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  float: right;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 🖤✨ Cutified Dark Mode Theme */
+body.dark-mode {
+  background: linear-gradient(to bottom, #2a2a40, #1c1c2e);
+  color: #fceaff;
+}
+
+body.dark-mode .container {
+  background: rgba(255, 240, 255, 0.05);
+  box-shadow: 0 0 15px #d08cc6;
+  border: 1px solid #ffcaf9;
+}
+
+body.dark-mode textarea,
+body.dark-mode input,
+body.dark-mode button {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffeaff;
+  border: 1px solid #ffb6e0;
+}
+
+body.dark-mode .entry {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px dashed #ffb3d1;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+body.dark-mode button {
+  background-color: #ffaad4;
+  color: #3b003f;
+  transition: 0.3s;
+}
+
+body.dark-mode button:hover {
+  background-color: #ffc1ea;
+  color: #24001f;
+}
+.edit-text {
+  width: 100%;
+  height: 80px;
+  margin: 5px 0;
+}
+
+.edit-mood {
+  width: 60px;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  textarea, input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .auth-buttons button,
+  .actions button,
+  .logout-btn,
+  #moodSelector button,
+  .delete-btn,
+  .save-edit,
+  .edit-section button {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .entry {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .theme-toggle {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .edit-text {
+    width: 100%;
+  }
+
+  .edit-mood {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
