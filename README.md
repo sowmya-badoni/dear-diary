@@ -30,7 +30,7 @@ Log your thoughts, track your moods, and save memories — all in a cozy pastel 
 
 ## 🌐 Try It Live
 
-📲 **Use Cute Diary here**:  
+📲 **Use dear Diary here**:  
 🔗 [https://dear-diary-kappa.vercel.app](https://dear-diary-kappa.vercel.app)
 
 
